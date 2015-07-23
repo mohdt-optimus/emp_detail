@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB825D701B6109CF00457AEC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB825D6F1B6109CF00457AEC /* libsqlite3.dylib */; };
+		DB825D731B61116B00457AEC /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB825D721B61116B00457AEC /* SearchViewController.m */; };
 		DBC111371B5FA4C00099DC92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC111361B5FA4C00099DC92 /* main.m */; };
 		DBC1113A1B5FA4C00099DC92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC111391B5FA4C00099DC92 /* AppDelegate.m */; };
 		DBC1113D1B5FA4C00099DC92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC1113C1B5FA4C00099DC92 /* ViewController.m */; };
@@ -29,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB825D6F1B6109CF00457AEC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DB825D711B61116B00457AEC /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		DB825D721B61116B00457AEC /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		DBC111311B5FA4C00099DC92 /* Emp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC111351B5FA4C00099DC92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBC111361B5FA4C00099DC92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB825D701B6109CF00457AEC /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +77,7 @@
 				DBC111331B5FA4C00099DC92 /* Emp */,
 				DBC1114D1B5FA4C00099DC92 /* EmpTests */,
 				DBC111321B5FA4C00099DC92 /* Products */,
+				DB825D6F1B6109CF00457AEC /* libsqlite3.dylib */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +104,8 @@
 				DBC111341B5FA4C00099DC92 /* Supporting Files */,
 				DBC1115D1B5FB70B0099DC92 /* AddViewController.h */,
 				DBC1115E1B5FB70B0099DC92 /* AddViewController.m */,
+				DB825D711B61116B00457AEC /* SearchViewController.h */,
+				DB825D721B61116B00457AEC /* SearchViewController.m */,
 			);
 			path = Emp;
 			sourceTree = "<group>";
@@ -231,6 +240,7 @@
 				DBC1113D1B5FA4C00099DC92 /* ViewController.m in Sources */,
 				DBC1113A1B5FA4C00099DC92 /* AppDelegate.m in Sources */,
 				DBC1115C1B5FA6030099DC92 /* Emp.xcdatamodeld in Sources */,
+				DB825D731B61116B00457AEC /* SearchViewController.m in Sources */,
 				DBC111371B5FA4C00099DC92 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +434,7 @@
 				DBC111561B5FA4C00099DC92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBC111571B5FA4C00099DC92 /* Build configuration list for PBXNativeTarget "EmpTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +443,7 @@
 				DBC111591B5FA4C00099DC92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

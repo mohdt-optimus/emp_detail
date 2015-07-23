@@ -7,12 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#include <sqlite3.h>
 
 @interface AddViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIView *name;
-@property (weak, nonatomic) IBOutlet UIView *designation;
-@property (weak, nonatomic) IBOutlet UIView *empcode;
-@property (weak, nonatomic) IBOutlet UIView *photo;
-@property (weak, nonatomic) IBOutlet UIView *tagline;
-@property (weak, nonatomic) IBOutlet UIView *department;
+
+@property (nonatomic,strong) NSString *databasePath;
+@property (nonatomic) sqlite3 *DB;
+
+@property (weak, nonatomic) IBOutlet UITextField *name;
+@property (weak, nonatomic) IBOutlet UITextField *designation;
+@property (weak, nonatomic) IBOutlet UITextField *empCode;
+@property (weak, nonatomic) IBOutlet UITextField *photo;
+@property (weak, nonatomic) IBOutlet UITextField *tagLine;
+@property (weak, nonatomic) IBOutlet UITextField *department;
+
+- (IBAction)insertButton:(id)sender;
 @end

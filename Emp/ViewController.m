@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"app dir: %@",[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject]);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,7 +27,7 @@
 }
 - (IBAction)addDetailsInDb:(id)sender
 {
-    AddViewController *addview=[[AddViewController alloc] init];
+ //   AddViewController *addview=[[AddViewController alloc] init];
  //   [self.navigationController pushViewController:addview animated:YES];
     //[self performSegueWithIdentifier:@"add_segue" sender:self];
     
